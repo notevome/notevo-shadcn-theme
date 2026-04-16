@@ -1,13 +1,22 @@
 {
-  "name": "notevo-shadcn-theme",
+  "name": "@notevo/notevo-shadcn-theme",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "My custom shadcn/ui theme",
+ "main": "index.css",
+  "files": ["index.css"],
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "notevo-shadcn-theme",
+      "version": "1.0.0",
+      "license": "ISC"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.2"
+  },
+  "keywords": ["shadcn", "theme", "tailwind"]
 }
