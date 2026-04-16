@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --placeholder: #644a40;
+        --selection-background: #644a403c;
+        --selection-color: #000000;
+        --background: 0 0% 97.6471%;
+        --foreground: 0 0% 12.5490%;
+        --card: 0 0% 98.8235%;
+        --card-foreground: 0 0% 12.5490%;
+        --popover: 0 0% 98.8235%;
+        --popover-foreground: 0 0% 12.5490%;
+        --primary: 16.6667 21.9512% 32.1569%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 34.0541 100.0000% 85.4902%;
+        --secondary-foreground: 16.2712 50.4274% 22.9412%;
+        --muted: 0 0% 93.7255%;
+        --muted-foreground: 0 0% 39.2157%;
+        --accent: 0 0% 90.9804%;
+        --accent-foreground: 0 0% 12.5490%;
+        --destructive: 10.1639 77.8723% 53.9216%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 84.7059%;
+        --input: 0 0% 84.7059%;
+        --ring: 16.6667 21.9512% 32.1569%;
+        --chart-1: 16.6667 21.9512% 32.1569%;
+        --chart-2: 34.0541 100.0000% 85.4902%;
+        --chart-3: 0 0% 90.9804%;
+        --chart-4: 34.5763 100.0000% 88.4314%;
+        --chart-5: 16.5000 24.3902% 32.1569%;
+        --sidebar: 0 0% 98.4314%;
+        --sidebar-foreground: 0 0% 14.5098%;
+        --sidebar-primary: 0 0% 20.3922%;
+        --sidebar-primary-foreground: 0 0% 98.4314%;
+        --sidebar-accent: 0 0% 96.8627%;
+        --sidebar-accent-foreground: 0 0% 20.3922%;
+        --sidebar-border: 0 0% 92.1569%;
+        --sidebar-ring: 0 0% 70.9804%;
+        --radius: 0.5rem;
+        --shadow-x: 0;
+        --shadow-y: 1px;
+        --shadow-blur: 3px;
+        --shadow-spread: 0px;
+        --shadow-opacity: 0.1;
+        --novel-white: rgb(25 25 25);
+        --novel-black: rgb(255 255 255);
+        --novel-stone-50: rgb(35 35 34);
+        --novel-stone-100: rgb(41 37 36);
+        --novel-stone-200: rgb(66 69 71);
+        --novel-stone-300: rgb(112 118 123);
+        --novel-stone-400: rgb(160 167 173);
+        --novel-stone-500: rgb(193 199 204);
+        --novel-stone-600: rgb(212 217 221);
+        --novel-stone-700: rgb(229 232 235);
+        --novel-stone-800: rgb(232 234 235);
+        --novel-stone-900: rgb(240, 240, 241);
+
+        --novel-highlight-default: 0 0% 4%;
+        --novel-highlight-purple: #d3c0dc;
+        --novel-highlight-red: #e6b3b3;
+        --novel-highlight-yellow: #e6dbb3;
+        --novel-highlight-blue: #b3cde6;
+        --novel-highlight-green: #b3e6ba;
+        --novel-highlight-orange: #e6c7b3;
+        --novel-highlight-pink: #e6b3c7;
+        --novel-highlight-gray: #cccccc;
+
+        --novel-text-purple: #7e22ce;
+        --novel-text-red: #dc2626;
+        --novel-text-yellow: #ca8a04;
+        --novel-text-blue: #2563eb;
+        --novel-text-green: #15803d;
+        --novel-text-orange: #ea580c;
+        --novel-text-pink: #db2777;
+        --novel-text-gray: #525252;
+
+
+        --font-title: "Cal Sans", sans-serif;
+
+        /* Editor specific colors */
+        --editor-background: 0 0% 100%;
+        --editor-foreground: 0 0% 4%;
+        --editor-muted: 0 0% 96%;
+        --editor-muted-foreground: 0 0% 45%;
+        --editor-accent: 0 0% 92%;
+        --editor-accent-foreground: 0 0% 4%;
+        --editor-border: 0 0% 90%;
+        --editor-ring: 0 0% 4%;
+    }
+
+    .dark {
+        --placeholder: #ffe0c2;
+        --selection-background: #ffe1c257;
+        --selection-color: #ffffff;
+        --background: 0 0% 6.6667%;
+        --foreground: 0 0% 93.3333%;
+        --card: 0 0% 9.8039%;
+        --card-foreground: 0 0% 93.3333%;
+        --popover: 0 0% 9.8039%;
+        --popover-foreground: 0 0% 93.3333%;
+        --primary: 33 45% 80%;
+        --primary-foreground: 183.1579 54.2857% 6.8627%;
+        --secondary: 28.2353 17.5258% 19.0196%;
+        --secondary-foreground: 33 45% 80%;
+        --muted: 0 0% 13.3333%;
+        --muted-foreground: 0 0% 70.5882%;
+        --accent: 0 0% 16.4706%;
+        --accent-foreground: 0 0% 93.3333%;
+        --destructive: 10.1639 77.8723% 53.9216%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 45 14.2857% 10.9804%;
+        --input: 0 0% 28.2353%;
+        --ring: 33 45% 80%;
+        --chart-1: 33 45% 80%;
+        --chart-2: 28.2353 17.5258% 19.0196%;
+        --chart-3: 0 0% 16.4706%;
+        --chart-4: 30.0000 17.8571% 21.9608%;
+        --chart-5: 33 45% 79%;
+        --sidebar: 240 5.8824% 10%;
+        --sidebar-foreground: 240 4.7619% 95.8824%;
+        --sidebar-primary: 224.2781 76.3265% 48.0392%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7037% 15.8824%;
+        --sidebar-accent-foreground: 240 4.7619% 95.8824%;
+        --sidebar-border: 240 3.7037% 15.8824%;
+        --sidebar-ring: 240 4.8780% 83.9216%;
+        --radius: 0.5rem;
+        --shadow-x: 0;
+        --shadow-y: 1px;
+        --shadow-blur: 3px;
+        --shadow-spread: 0px;
+        --shadow-opacity: 0.1;
+        --novel-white: rgb(255 255 255);
+        --novel-black: rgb(25 25 25);
+        --novel-stone-50: rgb(35 35 34);
+        --novel-stone-100: rgb(41 37 36);
+        --novel-stone-200: rgb(66 69 71);
+        --novel-stone-300: rgb(112 118 123);
+        --novel-stone-400: rgb(160 167 173);
+        --novel-stone-500: rgb(193 199 204);
+        --novel-stone-600: rgb(212 217 221);
+        --novel-stone-700: rgb(229 232 235);
+        --novel-stone-800: rgb(232 234 235);
+        --novel-stone-900: rgb(240, 240, 241);
+
+        --novel-highlight-default: 0 0% 98%;
+        --novel-highlight-purple: #3f2c4b;
+        --novel-highlight-red: #5c1a1a;
+        --novel-highlight-yellow: #5c4b1a;
+        --novel-highlight-blue: #1a3d5c;
+        --novel-highlight-green: #1a5c20;
+        --novel-highlight-orange: #5c3a1a;
+        --novel-highlight-pink: #5c1a3a;
+        --novel-highlight-gray: #3a3a3a;
+
+        --novel-text-purple: #c084fc;
+        --novel-text-red: #f87171;
+        --novel-text-yellow: #facc15;
+        --novel-text-blue: #60a5fa;
+        --novel-text-green: #4ade80;
+        --novel-text-orange: #fdba74;
+        --novel-text-pink: #f472b6;
+        --novel-text-gray: #d4d4d4;
+
+        --font-title: "Cal Sans", sans-serif;
+
+        /* Editor specific colors for dark mode */
+        --editor-background: 0 0% 4%;
+        --editor-foreground: 0 0% 98%;
+        --editor-muted: 0 0% 15%;
+        --editor-muted-foreground: 0 0% 65%;
+        --editor-accent: 0 0% 12%;
+        --editor-accent-foreground: 0 0% 98%;
+        --editor-border: 0 0% 15%;
+        --editor-ring: 0 0% 83.9%;
+    }
+}
+
+/* Force light mode on any element regardless of .dark on <html> */
+.force-light {
+    --placeholder: #644a40;
+    --selection-background: #644a403c;
+    --selection-color: #000000;
+    --background: 0 0% 97.6471%;
+    --foreground: 0 0% 12.5490%;
+    --card: 0 0% 98.8235%;
+    --card-foreground: 0 0% 12.5490%;
+    --popover: 0 0% 98.8235%;
+    --popover-foreground: 0 0% 12.5490%;
+    --primary: 16.6667 21.9512% 32.1569%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 34.0541 100.0000% 85.4902%;
+    --secondary-foreground: 16.2712 50.4274% 22.9412%;
+    --muted: 0 0% 93.7255%;
+    --muted-foreground: 0 0% 39.2157%;
+    --accent: 0 0% 90.9804%;
+    --accent-foreground: 0 0% 12.5490%;
+    --destructive: 10.1639 77.8723% 53.9216%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 84.7059%;
+    --input: 0 0% 84.7059%;
+    --ring: 16.6667 21.9512% 32.1569%;
+    --chart-1: 16.6667 21.9512% 32.1569%;
+    --chart-2: 34.0541 100.0000% 85.4902%;
+    --chart-3: 0 0% 90.9804%;
+    --chart-4: 34.5763 100.0000% 88.4314%;
+    --chart-5: 16.5000 24.3902% 32.1569%;
+    --sidebar: 0 0% 98.4314%;
+    --sidebar-foreground: 0 0% 14.5098%;
+    --sidebar-primary: 0 0% 20.3922%;
+    --sidebar-primary-foreground: 0 0% 98.4314%;
+    --sidebar-accent: 0 0% 96.8627%;
+    --sidebar-accent-foreground: 0 0% 20.3922%;
+    --sidebar-border: 0 0% 92.1569%;
+    --sidebar-ring: 0 0% 70.9804%;
+    color-scheme: light;
+}
