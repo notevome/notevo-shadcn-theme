@@ -1,6 +1,6 @@
 {
   "name": "@notevome/notevo-shadcn-theme",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Custom shadcn/ui theme for Notevo",
   "main": "index.css",
   "files": [
