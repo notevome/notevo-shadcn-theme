@@ -1,13 +1,20 @@
 {
   "name": "@notevome/notevo-shadcn-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom shadcn/ui theme for Notevo",
   "main": "index.css",
-  "files": ["index.css"],
+  "files": [
+    "index.css"
+  ],
   "peerDependencies": {
     "tailwindcss": "^4.0.0"
   },
-  "keywords": ["shadcn", "theme", "tailwind", "notevome"],
+  "keywords": [
+    "shadcn",
+    "theme",
+    "tailwind",
+    "notevome"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
